@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  banner:
+    charset: utf-8
+    location: banner.txt
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+  main:
+    lazy-initialization: true
+    web-application-type: servlet
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+  server:
+    renewal-percent-threshold: 0.85
+    enable-self-preservation: true
+    wait-time-in-ms-when-sync-empty: 300000
+    max-threads-for-peer-replication: 20
