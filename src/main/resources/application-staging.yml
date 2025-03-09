@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://discovery-server:8081/eureka
+  server:
+    renewal-percent-threshold: 0.85
+    enable-self-preservation: true
+    wait-time-in-ms-when-sync-empty: 300000
+    max-threads-for-peer-replication: 20
