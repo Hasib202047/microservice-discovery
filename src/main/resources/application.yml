@@ -1,9 +1,8 @@
-server:
-  port: 8081
+
 
 spring:
   profiles:
-    active: staging
+    active: dev
   banner:
     charset: utf-8
     location: banner.txt
